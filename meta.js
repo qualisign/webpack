@@ -77,7 +77,16 @@ module.exports = {
     "e2e": {
       "type": "confirm",
       "message": "Setup e2e tests with Nightwatch?"
-    }
+    },
+      {
+	  type: 'input',
+	  name: 'last_name',
+	  message: 'What\'s your last name',
+	  default: function () {
+	      return 'Doe';
+	  }
+      }      
+      
   },
   "filters": {
     ".eslintrc.js": "lint",
