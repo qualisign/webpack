@@ -44,7 +44,7 @@ module.exports = {
       "type": "confirm",
       "message": "Install vue-router?"
     },
-    "last_name"  {
+      "last_name":  {
 	  type: 'input',
 	  message: 'What\'s your last name',
 	  default: function () {
