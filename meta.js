@@ -44,7 +44,14 @@ module.exports = {
       "type": "confirm",
       "message": "Install vue-router?"
     },
-    "lint": {
+    "last_name"  {
+	  type: 'input',
+	  message: 'What\'s your last name',
+	  default: function () {
+	      return 'Doe';
+	  }
+    },
+      "lint": {
       "type": "confirm",
       "message": "Use ESLint to lint your code?"
     },
@@ -78,14 +85,7 @@ module.exports = {
       "type": "confirm",
       "message": "Setup e2e tests with Nightwatch?"
     },
-      {
-	  type: 'input',
-	  name: 'last_name',
-	  message: 'What\'s your last name',
-	  default: function () {
-	      return 'Doe';
-	  }
-      }      
+      
       
   },
   "filters": {
